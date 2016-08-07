@@ -4,6 +4,12 @@
     name: dnsmasq
     state: installed
 
+- name: config file is present
+  copy:
+    src: "{{ dhcp_server_config_file }}"
+    dest: /etc/dnsmasq.conf
+  notify: reload dnsmasq
+
 - name: service is enabled
   service:
     name: dnsmasq

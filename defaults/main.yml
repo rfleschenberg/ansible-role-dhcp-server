@@ -1,2 +1,2 @@
 ---
-# defaults file for ansible/roles/dhcp-server
+dhcp_server_config_file: dnsmasq.conf

@@ -11,7 +11,7 @@ None.
 Role Variables
 --------------
 
-None yet.
+`dhcp_server_config_file`: Path to a file to use as dnsmasq.conf. Default: `dnsmasq.conf`.
 
 Dependencies
 ------------
@@ -25,7 +25,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: dhcp-servers
       roles:
-         - { role: rfleschenberg.dhcp-server  }
+         - { role: rfleschenberg.dhcp-server, dhcp_server_config_file: dnsmasq.conf }
 
 License
 -------
