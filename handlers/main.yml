@@ -1,5 +1,6 @@
 ---
+# Note: we need to restart dnsmasq, a reload is not enough. Not sure why.
 - name: reload dnsmasq
   service:
     name: dnsmasq
-    state: reloaded
+    state: restarted
