@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - ansible/roles/dhcp-server
+    - ansible-role-dhcp-server
