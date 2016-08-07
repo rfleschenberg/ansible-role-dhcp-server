@@ -1,0 +1,15 @@
+---
+- name: dnsmasq is installed
+  apt:
+    name: dnsmasq
+    state: installed
+
+- name: service is enabled
+  service:
+    name: dnsmasq
+    enabled: true
+
+- name: service is started
+  service:
+    name: dnsmasq
+    state: started
