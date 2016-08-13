@@ -10,6 +10,11 @@
     dest: /etc/dnsmasq.conf
   notify: reload dnsmasq
 
+- name: Install resolvconf
+  apt:
+    name: resolvconf
+    state: installed
+
 - name: service is enabled
   service:
     name: dnsmasq
